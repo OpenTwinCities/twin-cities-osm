@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iD</title>
-        <link rel="stylesheet" href="libs/iD-master-20130327/css/reset.css">
-        <link rel="stylesheet" href="libs/iD-master-20130327/css/map.css">
-        <link rel="stylesheet" href="libs/iD-master-20130327/css/app.css">
-        <link rel="stylesheet" href="libs/iD-master-20130327/css/feature-icons.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Twin Cities OpenStreetMap editor</title>
+    <link rel="stylesheet" href="libs/iD-master-20130327/css/reset.css">
+    <link rel="stylesheet" href="libs/iD-master-20130327/css/map.css">
+    <link rel="stylesheet" href="libs/iD-master-20130327/css/app.css">
+    <link rel="stylesheet" href="libs/iD-master-20130327/css/feature-icons.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 
-        <!-- mobile devices -->
-        <meta name="viewport" content="initial-scale=1.0 maximum-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- mobile devices -->
+    <meta name="viewport" content="initial-scale=1.0 maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    </head>
-    <body>
-        <div id="iD"></div>
-        
-        
-        <script src="libs/iD-master-20130327/iD.min.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+  </head>
+  <body>
+    
+    <div id="id-container">
+      <div id="iD"></div>
+    </div>
+    
+    <script src="libs/iD-master-20130327/iD.min.js"></script>
+    <script src="js/id-override/ui/intro/line.js"></script>
+    <script src="js/id-override/ui/intro/point.js"></script>
+    <script src="js/id-override/data/introGraph.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
